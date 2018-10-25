@@ -34,11 +34,13 @@ class Student
   end
 
   def self.students_below_12th_grade
-    include Enumerable
+  end
 
-    def each(&block)
-      
-    end
+  def self.first_X_students_in_grade_10
+  end
+
+
+  
   def save
     sql = <<-SQL
       INSERT INTO students (name, grade)
